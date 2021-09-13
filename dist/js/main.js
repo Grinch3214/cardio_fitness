@@ -86,12 +86,14 @@ $(document).ready(function () {
 	});
 });
 
-const footerBtn = document.querySelector('.fitness-button');
-if (footerBtn) {
-	footerBtn.addEventListener("click", function (e) {
-		document.body.classList.toggle('lock');
+const footerBtn = document.querySelectorAll('a.fitness-button');
+if (footerBtn.length > 0) {
+	footerBtn.forEach(btns => {
+		btns.addEventListener('click', function (event) {
+			document.body.classList.toggle('lock');
+		});
 	});
-}
+};
 
 const overLay = document.querySelector('#overlay');
 const close = document.querySelector('.close');
@@ -100,17 +102,17 @@ if (overLay) {
 	overLay.addEventListener("click", function (event) {
 		document.body.classList.remove('lock');
 	});
-}
+};
 if (close) {
 	close.addEventListener("click", function (event) {
 		document.body.classList.remove('lock');
 	});
-}
+};
 if (formBtn) {
 	formBtn.addEventListener("click", function (event) {
 		document.body.classList.remove('lock');
 	});
-}
+};
 
 
 $(document).ready(function () {
