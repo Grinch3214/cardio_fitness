@@ -1,0 +1,140 @@
+.shedule {
+    position: relative;
+    top: -254px;
+	 @media screen and (max-width: 767px) {
+		top: 0px;
+		margin-top: -254px;
+	}
+    &-card{
+        background: url('../images/card_1.jpg') 0 0/cover no-repeat;;
+        max-width: none;
+        min-height: 286px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(244,67,54,0.9);
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 370px;
+        }
+    }
+    &-card + div {
+        background: url('../images/card_2.jpg') 0 0/cover no-repeat;
+        &::before {
+            background: rgba(76,175,80,0.9);
+        }
+    }
+    &-card + div+ div {
+        background: url('../images/card_3.jpg') 0 0/cover no-repeat;
+        &::before {
+            background: rgba(0,168,255,0.9);
+        }
+    }
+
+    &-tab {
+        position: relative;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        @media screen and (max-width: 425px) {
+            top: -35px;
+            left: 25px;
+        }
+    }
+
+    &-box {
+        position: relative;
+        padding: 34px 40px 0;
+    }
+
+    &-title{
+        font-family: 'proxima_novabold_700';
+        font-size: 24px;
+        margin-bottom: 54px;
+    }
+
+    &-list{}
+
+    &-item {
+        padding-left: 40px;
+        margin-bottom: 35px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 26px;
+            background: url('../images/jump_mini.png') 0 0 no-repeat;
+        }
+    }
+
+    &-title-text {
+        margin-top: 5px;
+    }
+
+    &-inner-text {
+        font-family: 'proxima_novabold_700';
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    &-footer-text {
+        font-family: 'proxima_novalight_300';
+        opacity: 0.8;
+    }
+
+    &-body-text {
+        font-size: 24px;
+    }
+
+    &-big-footer {
+        font-family: 'proxima_novabold_700';
+        font-size: 36px;
+    }
+}
+.shedule-list + div .shedule-item {
+    &::before {
+        width: 20px;
+        height: 20px;
+        background: url('../images/gym_mini.png') 0 0 no-repeat;
+    }
+}
+
+.shedule-list + div + div .shedule-item {
+    &::before {
+        width: 23px;
+        height: 20px;
+        background: url('../images/heart_mini.png') 0 0 no-repeat;
+    }
+}
+
+.tablinks, .tablinksReviews {
+    position: absolute;
+    cursor: pointer;
+    top: 50px;
+    right: 40px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff;
+    background: transparent;
+    &:hover {
+        background: #ddd;
+    }
+}
+.tablinks + .tablinks, .tablinksReviews + button {
+    right: 60px;
+}
+.tablinks + .tablinks + .tablinks, .tablinksReviews + button + button {
+    right: 80px;
+}
+.tablinks.active, .tablinksReviews.active {
+    background: #fff;
+}
+.tabcontent, .tabcontentReviews {
+    display: none;
+}

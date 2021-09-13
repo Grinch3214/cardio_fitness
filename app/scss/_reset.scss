@@ -1,0 +1,133 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'proxima_novaregular_400';
+    font-weight: normal;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  ul {
+      margin-bottom: 0;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .card-img, .card-img-top {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+}
+
+  @media (min-width: 1200px) {
+    .my-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+  }
+  
+
+  $primary-color: #00a8ff;
+  $title-color: #333;
+  $second-color: #999;
+
+  main {
+    background: rgb(255,255,255);
+    background: linear-gradient(175deg, rgba(255,255,255,1) 27.2%, rgba(247,247,247,1) 10%);
+    @media screen and (max-width: 991px) {
+      background: linear-gradient(175deg, rgba(255,255,255,1) 40%, rgba(247,247,247,1) 10%);
+    }
+	 @media screen and (max-width: 767px) {
+      background: linear-gradient(175deg, rgba(255,255,255,1) 42%, rgba(247,247,247,1) 10%);
+    }
+  }
+
+  .fitness-button {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 15px 31px 14px;
+    transition: .4s;
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+
+  .twitter, .facebook, .linkedin {
+    width: 30px;
+    height: 28px;
+  }
+
+  body.lock .shedule {
+    z-index: -1;
+  }

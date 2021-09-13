@@ -1,0 +1,62 @@
+.social {
+    .swiper-pagination {
+        bottom: 152px;
+		  @media screen and (max-width: 991px) {
+			  bottom: 35px;
+		  }
+    }
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: unset;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #fff;
+    }
+    &-twitter, &-facebook, &-linkedin {
+        padding-top: 148px;
+        padding-bottom: 151px;
+        background: $primary-color;
+		  @media screen and (max-width: 991px) {
+			  padding-top: 40px;
+			  padding-bottom: 20px;
+		  }
+    }
+    &-facebook {
+        background: #3b5998;
+    }
+    &-linkedin {
+        background: #0e76a8;
+    }
+
+
+    &-container {
+        margin-bottom: 80px;
+        max-width: 720px;
+        font-family: 'proxima_novalight_300';
+        font-size: 30px;
+        color: #fff;
+		  @media screen and (max-width: 575px) {
+			  font-size: 24px;
+		  }
+        p {
+            padding-bottom: 40px;
+				@media screen and (max-width: 575px) {
+					padding-bottom: 10px;
+				}
+        }
+        p + p {
+            padding-bottom: 0;
+        }
+        p + p + p {
+            color: #93daff;
+        }
+    }
+}

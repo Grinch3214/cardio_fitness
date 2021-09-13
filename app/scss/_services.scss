@@ -1,0 +1,88 @@
+.services {
+    margin-top: -80px;
+    padding-bottom: 180px;
+	 @media screen and (max-width: 767px) {
+		margin-top: 70px;
+		padding-bottom: 75px;
+  }
+    &-title, h3 {
+        font-family: 'proxima_novabold_700';
+        font-size: 48px;
+        color: $title-color;
+        line-height: 48px;
+		  @media screen and (max-width: 767px) {
+			  font-size: 35px;
+			  line-height: 30px;
+		  }
+    }
+    &-text {
+        font-family: 'proxima_novalight_300';
+        font-size: 24px;
+        line-height: 47px;
+        color: #bbb;
+        margin-bottom: 163px;
+        @media screen and (max-width: 991px) {
+            margin-bottom: 40px;
+        }
+		  @media screen and (max-width: 767px) {
+			line-height: 30px;
+			margin-bottom: 55px
+		}
+    }
+    &-body {}
+
+    &-card {
+        position: relative;
+        max-width: none;
+        // padding: 30px;
+        min-height: 319px;
+        border: 1px solid #ddd;
+        transition: .3s;
+        h3 {
+            font-size: 24px;
+            color: $title-color;
+        }
+        &:hover {
+            border: 1px solid $primary-color;
+        }
+        &:hover .services-border-img, &:hover .services-card-text {
+            display: block;
+        }
+        &:hover .services-card-img {
+            display: none;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 370px;
+        }
+        @media screen and (max-width: 991px) {
+            border: 1px solid $primary-color;
+        }
+    }
+    &-border-img {
+        position: absolute;
+        display: none;
+        top: -22px;
+        left: 50%;
+        transform: translate(-50%);
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+    }
+    &-card-img {
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+    &-card-img, &-border-img {
+        width: 60px;
+        height: 60px;
+    }
+    &-card-text {
+        color: $second-color;
+        line-height: 32px;
+        display: none;
+        @media screen and (max-width: 991px) {
+            display: block;
+        }
+    }
+}
