@@ -1,89 +1,87 @@
 .pricing {
-    padding-top: 154px;
-    padding-bottom: 160px;
-    background: url('../images/body_bg.jpg') 0 0 / cover no-repeat;
+	padding-top: 154px;
+	padding-bottom: 160px;
+	background: url("../images/body_bg.jpg") 0 0 / cover no-repeat;
 
-	 @media screen and (max-width: 991px) {
+	@media screen and (max-width: 991px) {
 		padding-top: 40px;
 		padding-bottom: 50px;
-  }
+	}
 
-    &-head {
-    }
-    &-title, &-text {
-        color: #fff;
-    }
-    &-title {}
-    &-text {
-        margin-bottom: 144px;
-		  @media screen and (max-width: 991px) {
-			  margin-bottom: 50px;
-		  }
-    }
+	&-title,
+	&-text {
+		color: #fff;
+	}
+	&-text {
+		margin-bottom: 144px;
+		@media screen and (max-width: 991px) {
+			margin-bottom: 50px;
+		}
+	}
 
-    &-card {
-        color: #fff;
-        max-width: none;
-        background: $primary-color;
-        padding: 55px 0 10px 59px;
-        min-height: 296px;
-		  @media screen and (max-width: 767px) {
+	&-card {
+		color: #fff;
+		max-width: none;
+		background: $primary-color;
+		padding: 55px 0 10px 59px;
+		min-height: 296px;
+		@media screen and (max-width: 767px) {
 			padding: 55px 0 10px 0;
-	  	  }
-    }
+		}
+	}
 
-    &-btn {
-        color: #fff;
-        border: 1px solid #fff;
-        &:hover {
-            border-color: $title-color;
-            background: $title-color;
-            transform: translateY(1px);
-        }
-    }
-    &-card-title {
-        font-family: 'proxima_novabold_700';
-        font-size: 24px;
-    }
+	&-btn {
+		color: #fff;
+		border: 1px solid #fff;
+		&:hover {
+			border-color: $title-color;
+			background: $title-color;
+			transform: translateY(1px);
+		}
+	}
+	&-card-title {
+		font-family: "proxima_novabold_700";
+		font-size: 24px;
+	}
 
-    &-card-price {
-        font-family: 'proxima_novalight_300';
-        font-size: 30px;
-        margin-bottom: 52px;
-		  @media screen and (max-width: 767px) {
+	&-card-price {
+		font-family: "proxima_novalight_300";
+		font-size: 30px;
+		margin-bottom: 52px;
+		@media screen and (max-width: 767px) {
 			margin-bottom: 20px;
-	  	  }
-        span {
-            font-size: 18px;
-        }
-    }
+		}
+		span {
+			font-size: 18px;
+		}
+	}
 
-    &-list {
-        font-family: 'proxima_novalight_300';
-        li {
-            padding-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 10px;
-                left: 0;
-                width: 6px;
-                height: 6px;
-                background: #fff;
-            }
-        }
-    }
+	&-list {
+		font-family: "proxima_novalight_300";
+		li {
+			padding-bottom: 10px;
+			padding-left: 25px;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 10px;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				background: #fff;
+			}
+		}
+	}
 }
 
 .pricing-box + .pricing-box .pricing-card {
-    padding-left: 0;
-    background: $second-color;
-    .pricing-btn {
-        &:hover {
-            background: $primary-color;
-            border-color: $primary-color;
-        }
-    }
+	padding-left: 0;
+	background: $second-color;
+	.pricing-btn {
+		&:hover {
+			background: $primary-color;
+			border-color: $primary-color;
+		}
+	}
 }

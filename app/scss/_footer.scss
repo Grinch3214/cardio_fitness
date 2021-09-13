@@ -238,6 +238,7 @@
 	max-width: 370px;
 	width: 100%;
 	padding: 23px 0;
+	margin: 34px 0 58px 0;
 	transition: 0.4s;
 	&:hover {
 		background: $title-color;
@@ -284,8 +285,4 @@
 	font-size: 30px;
 	color: #fff;
 	margin: 79px 0 74px 0;
-}
-
-.form-button {
-	margin: 34px 0 58px 0;
 }
