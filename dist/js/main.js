@@ -69,7 +69,7 @@ const swiper = new Swiper('.swiper', {
 
 
 $(document).ready(function () {
-	$('button.footer-btn').click(function (event) {
+	$('a.fitness-button').click(function (event) {
 		event.preventDefault();
 		$('#overlay').fadeIn(297, function () {
 			$('#modal')
@@ -86,7 +86,7 @@ $(document).ready(function () {
 	});
 });
 
-const footerBtn = document.querySelector('.footer-btn');
+const footerBtn = document.querySelector('.fitness-button');
 if (footerBtn) {
 	footerBtn.addEventListener("click", function (e) {
 		document.body.classList.toggle('lock');

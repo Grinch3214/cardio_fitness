@@ -1018,11 +1018,11 @@ body.lock .shedule {
   }
 }
 
-.social-container p + p {
+.social-container p + h6 {
   padding-bottom: 0;
 }
 
-.social-container p + p + p {
+.social-container p + h6 + p {
   color: #93daff;
 }
 
@@ -1338,6 +1338,7 @@ body.lock .shedule {
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
+  cursor: pointer;
 }
 
 .select-form:focus {
