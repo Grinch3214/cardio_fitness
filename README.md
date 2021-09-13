@@ -8,6 +8,7 @@
 Использован: 
 + Bootstrap 4 (JQuery по дефолту);
 + Native JS;
++ Swiper.js
 + CSS Animation;
 + PHP плагин для отправки формы;
 + Сборка GULP;
