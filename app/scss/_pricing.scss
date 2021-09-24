@@ -23,8 +23,12 @@
 		color: #fff;
 		max-width: none;
 		background: $primary-color;
-		padding: 55px 0 10px 59px;
+		padding: 55px 0 10px 45px;
 		min-height: 296px;
+		margin-left: 27px;
+		@media screen and (max-width: 991px) {
+			margin-left: 0;
+		}
 		@media screen and (max-width: 767px) {
 			padding: 55px 0 10px 0;
 		}
@@ -47,7 +51,7 @@
 	&-card-price {
 		font-family: "proxima_novalight_300";
 		font-size: 30px;
-		margin-bottom: 52px;
+		margin-bottom: 48px;
 		@media screen and (max-width: 767px) {
 			margin-bottom: 20px;
 		}

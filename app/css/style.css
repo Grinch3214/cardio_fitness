@@ -68,6 +68,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: "proxima_novaregular_400";
   font-weight: normal;
+  overflow-x: hidden;
 }
 
 input,
@@ -321,6 +322,7 @@ body.lock .shedule {
   font-family: "proxima_novathin_100";
   text-align: center;
   font-size: 36px;
+  margin-left: 29px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -506,8 +508,8 @@ body.lock .shedule {
 .shedule-tab {
   position: relative;
   z-index: 1;
-  top: 0;
-  right: 0;
+  top: -5px;
+  right: -4px;
 }
 
 @media screen and (max-width: 425px) {
@@ -544,10 +546,6 @@ body.lock .shedule {
   background: url("../images/jump_mini.png") 0 0 no-repeat;
 }
 
-.shedule-title-text {
-  margin-top: 5px;
-}
-
 .shedule-inner-text {
   font-family: "proxima_novabold_700";
   font-size: 26px;
@@ -557,15 +555,18 @@ body.lock .shedule {
 .shedule-footer-text {
   font-family: "proxima_novalight_300";
   opacity: 0.8;
+  padding-bottom: 15px;
 }
 
 .shedule-body-text {
   font-size: 24px;
+  line-height: 14px;
 }
 
 .shedule-big-footer {
   font-family: "proxima_novabold_700";
   font-size: 36px;
+  padding-bottom: 7px;
 }
 
 .shedule-list + div .shedule-item::before {
@@ -895,8 +896,15 @@ body.lock .shedule {
   color: #fff;
   max-width: none;
   background: #00a8ff;
-  padding: 55px 0 10px 59px;
+  padding: 55px 0 10px 45px;
   min-height: 296px;
+  margin-left: 27px;
+}
+
+@media screen and (max-width: 991px) {
+  .pricing-card {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -926,7 +934,7 @@ body.lock .shedule {
 .pricing-card-price {
   font-family: "proxima_novalight_300";
   font-size: 30px;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
 }
 
 @media screen and (max-width: 767px) {
@@ -971,11 +979,13 @@ body.lock .shedule {
 
 .social .swiper-pagination {
   bottom: 152px;
+  left: 15px;
 }
 
 @media screen and (max-width: 991px) {
   .social .swiper-pagination {
     bottom: 35px;
+    left: 0;
   }
 }
 
@@ -998,7 +1008,7 @@ body.lock .shedule {
 
 .social-twitter, .social-facebook, .social-linkedin {
   padding-top: 148px;
-  padding-bottom: 151px;
+  padding-bottom: 120px;
   background: #00a8ff;
 }
 

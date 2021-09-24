@@ -37,8 +37,8 @@
 	&-tab {
 		position: relative;
 		z-index: 1;
-		top: 0;
-		right: 0;
+		top: -5px;
+		right: -4px;
 		@media screen and (max-width: 425px) {
 			top: -35px;
 			left: 25px;
@@ -71,10 +71,6 @@
 		}
 	}
 
-	&-title-text {
-		margin-top: 5px;
-	}
-
 	&-inner-text {
 		font-family: "proxima_novabold_700";
 		font-size: 26px;
@@ -84,15 +80,18 @@
 	&-footer-text {
 		font-family: "proxima_novalight_300";
 		opacity: 0.8;
+		padding-bottom: 15px;
 	}
 
 	&-body-text {
 		font-size: 24px;
+		line-height: 14px;
 	}
 
 	&-big-footer {
 		font-family: "proxima_novabold_700";
 		font-size: 36px;
+		padding-bottom: 7px;
 	}
 }
 .shedule-list + div .shedule-item {

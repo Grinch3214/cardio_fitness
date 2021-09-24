@@ -1,8 +1,10 @@
 .social {
     .swiper-pagination {
         bottom: 152px;
+        left: 15px;
 		  @media screen and (max-width: 991px) {
 			  bottom: 35px;
+              left: 0;
 		  }
     }
     .swiper {
@@ -22,7 +24,7 @@
     }
     &-twitter, &-facebook, &-linkedin {
         padding-top: 148px;
-        padding-bottom: 151px;
+        padding-bottom: 120px;
         background: $primary-color;
 		  @media screen and (max-width: 991px) {
 			  padding-top: 40px;
