@@ -16,9 +16,14 @@
 	&-body {
 		color: #fff;
 		padding-top: 154px;
-		padding-bottom: 161px;
-		@media screen and (max-width: 991px) {
+		padding-bottom: 106px;
+		padding-left: 13px;
+		@media screen and (max-width: 1440px) {
 			padding: 60px 0;
+			// justify-content: center;
+		}
+		@media screen and (max-width: 767px) {
+			padding: 20px 0;
 		}
 	}
 	&-body-title {
@@ -39,7 +44,7 @@
 		padding: 14px 30px 13px;
 	}
 	&-body-bottom {
-		padding-left: 30px;
+		padding-left: 25px;
 	}
 	&-body-box {
 		margin-top: 42px;
@@ -50,27 +55,35 @@
 	&-social {
 		color: #fff;
 		padding-bottom: 84px;
-		@media screen and (max-width: 991px) {
+		@media screen and (max-width: 1440px) {
 			padding-bottom: 30px;
+		}
+		@media screen and (max-width: 767px) {
+			padding-bottom: 15px;
 		}
 	}
 	&-social-left {
 		color: #545662;
 		font-size: 16px;
+		padding-left: 30px;
 		a {
 			color: $primary-color;
 		}
 	}
 	&-social-right {
-		a img {
+		a {
 			width: 20px;
 			height: 23px;
+			margin-right: 39px;
+			background: url('../images/facebook.svg') no-repeat;
 		}
-		a + a img {
+		a + a {
 			width: 26px;
+			background: url('../images/twitter.svg') no-repeat;
 		}
-		a + a + a img {
+		a + a + a {
 			width: 24px;
+			background: url('../images/linkedin.svg') no-repeat;
 		}
 	}
 }
@@ -119,6 +132,9 @@
 }
 
 .footer-btn {
+	@media screen and (max-width: 767px) {
+		margin-top: 12px;
+	}
 	&:hover {
 		border-color: $second-color;
 		background: $second-color;

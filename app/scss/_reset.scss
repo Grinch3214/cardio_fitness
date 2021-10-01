@@ -40,7 +40,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	font-family: "proxima_novaregular_400";
 	font-weight: normal;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 
 input,
@@ -105,11 +105,7 @@ body.lock {
 
 @media (min-width: 1200px) {
 	.my-container {
-		max-width: 1170px;
-		margin-left: auto;
-		margin-right: auto;
-		padding-right: 15px;
-		padding-left: 15px;
+		max-width: 1200px;
 	}
 }
 
@@ -120,10 +116,19 @@ $second-color: #999;
 main {
 	background: rgb(255, 255, 255);
 	background: linear-gradient(175deg, rgba(255, 255, 255, 1) 27.2%, rgba(247, 247, 247, 1) 10%);
+	@media screen and (max-width: 1440px) {
+		background: linear-gradient(175deg, rgba(255, 255, 255, 1) 31.6%, rgba(247, 247, 247, 1) 10%);
+	}
 	@media screen and (max-width: 991px) {
-		background: linear-gradient(175deg, rgba(255, 255, 255, 1) 40%, rgba(247, 247, 247, 1) 10%);
+		background: linear-gradient(175deg, rgba(255, 255, 255, 1) 45%, rgba(247, 247, 247, 1) 10%);
 	}
 	@media screen and (max-width: 767px) {
+		background: linear-gradient(175deg, rgba(255, 255, 255, 1) 39.1%, rgba(247, 247, 247, 1) 10%);
+	}
+	@media screen and (max-width: 540px) {
+		background: linear-gradient(175deg, rgba(255, 255, 255, 1) 41%, rgba(247, 247, 247, 1) 10%);
+	}
+	@media screen and (max-width: 320px) {
 		background: linear-gradient(175deg, rgba(255, 255, 255, 1) 42%, rgba(247, 247, 247, 1) 10%);
 	}
 }
@@ -148,4 +153,27 @@ main {
 
 body.lock .shedule {
 	z-index: -1;
+}
+body.lock .header {
+	position: static;
+	height: 100%;
+}
+body.lock main {
+	background: #000;
+}
+
+.mr-27px {
+	margin-right: -27px;
+	@media screen and (max-width: 1440px) {
+		margin-right: -15px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.mleft-0 {
+		margin-left: 0;
+	}
+	.pright-0 {
+		padding-right: 0;
+	}
 }

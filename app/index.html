@@ -52,126 +52,134 @@
 
 	<main>
 		<section class="shedule container my-container">
-			<div class="row row-cols-1 row-cols-lg-3 justify-content-between text-white mx-2 ml-sm-1 mr-sm-0 ml-lg-0 mr-lg-n4">
-				<div class="shedule-card mb-3 mb-lg-0">
-					<div class="shedule-tab">
-						<button class="tablinks" onclick="openCard(event, 'tab_1')"></button>
-						<button class="tablinks" onclick="openCard(event, 'tab_2')"></button>
-						<button id="defaultOpen" class="tablinks" onclick="openCard(event, 'tab_3')"></button>
-					</div>
-					<div id="tab_1" class="shedule-box tabcontent">
-						<h2 class="shedule-title">Today’s schedule</h2>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1">Bent-over Row</p>
-							<p>12:30 - 14:00</p>
+			<div class="row row-cols-1 row-cols-lg-3 text-white mleft-0 mr-27px">
+				<div class="col mb-3 mb-lg-0">
+					<div class="shedule-card h-100">
+						<div class="shedule-tab">
+							<button class="tablinks" onclick="openCard(event, 'tab_1')"></button>
+							<button class="tablinks" onclick="openCard(event, 'tab_2')"></button>
+							<button id="defaultOpen" class="tablinks" onclick="openCard(event, 'tab_3')"></button>
 						</div>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1">Abdominal Crunches</p>
-							<p class="text-sm-nowrap">12:30 - 14:00</p>
+						<div id="tab_1" class="shedule-box tabcontent">
+							<h2 class="shedule-title">Today’s schedule</h2>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1">Bent-over Row</p>
+								<p>12:30 - 14:00</p>
+							</div>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1">Abdominal Crunches</p>
+								<p class="text-nowrap">12:30 - 14:00</p>
+							</div>
 						</div>
-					</div>
-					<div id="tab_2" class="shedule-box tabcontent">
-						<h2 class="shedule-title">Today’s schedule</h2>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1">Morning Workout</p>
-							<p>10:30 - 12:00</p>
+						<div id="tab_2" class="shedule-box tabcontent">
+							<h2 class="shedule-title">Today’s schedule</h2>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1">Morning Workout</p>
+								<p class="text-nowrap">10:30 - 12:00</p>
+							</div>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1">Interval Training</p>
+								<p>10:30 - 12:00</p>
+							</div>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1 mb-0">Push-ups</p>
+								<p>10:30 - 12:00</p>
+							</div>
 						</div>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1">Interval Training</p>
-							<p>10:30 - 12:00</p>
-						</div>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1 mb-0">Push-ups</p>
-							<p>10:30 - 12:00</p>
-						</div>
-					</div>
-					<div id="tab_3" class="shedule-box tabcontent">
-						<h2 class="shedule-title">Today’s schedule</h2>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1">Early Exercise</p>
-							<p>8:30 - 10:00</p>
-						</div>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1">Muscle Building</p>
-							<p>8:30 - 10:00</p>
-						</div>
-						<div class="shedule-list d-flex">
-							<p class="shedule-item flex-grow-1 mb-0">Cardio</p>
-							<p>8:30 - 10:00</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="shedule-card mb-3 mb-lg-0">
-					<div class="shedule-box d-flex flex-column justify-content-between h-100">
-						<h2>Premium Membership</h2>
-						<div>
-							<p class="shedule-body-text mb-0">Register Today</p>
-							<p class="shedule-big-footer">20% Discount</p>
+						<div id="tab_3" class="shedule-box tabcontent">
+							<h2 class="shedule-title">Today’s schedule</h2>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1">Early Exercise</p>
+								<p>8:30 - 10:00</p>
+							</div>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1">Muscle Building</p>
+								<p>8:30 - 10:00</p>
+							</div>
+							<div class="shedule-list d-flex">
+								<p class="shedule-item flex-grow-1 mb-0">Cardio</p>
+								<p>8:30 - 10:00</p>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="shedule-card mb-3 mb-lg-0">
-					<div class="shedule-tab">
-						<button class="tablinksReviews" onclick="openCardTab(event, 'tab_4')"></button>
-						<button class="tablinksReviews" onclick="openCardTab(event, 'tab_5')"></button>
-						<button id="defaultOpenCard" class="tablinksReviews" onclick="openCardTab(event, 'tab_6')"></button>
-					</div>
-					<div id="tab_4" class="shedule-box tabcontentReviews h-100">
-						<div class="d-flex flex-column justify-content-between h-100">
-							<h2 class="shedule-title-text">Happy Clients</h2>
-							<p class="shedule-inner-text">I couldn’t be more happy with the results!</p>
-							<p class="shedule-footer-text">Adam Jordan</p>
-						</div>
-					</div>
-					<div id="tab_5" class="shedule-box tabcontentReviews h-100">
-						<div class="d-flex flex-column justify-content-between h-100">
-							<h2 class="shedule-title-text">Happy Clients</h2>
-							<p class="shedule-inner-text">I became stronger thanks to you!</p>
-							<p class="shedule-footer-text">John Doue</p>
-						</div>
-					</div>
-					<div id="tab_6" class="shedule-box tabcontentReviews h-100">
-						<div class="d-flex flex-column justify-content-between h-100">
-							<h2 class="shedule-title-text">Happy Clients</h2>
-							<p class="shedule-inner-text">My body is perfect now!</p>
-							<p class="shedule-footer-text">Elena Helena</p>
+				<div class="col mb-3 mb-lg-0">
+					<div class="shedule-card h-100">
+						<div class="shedule-box d-flex flex-column justify-content-between h-100">
+							<h2>Premium Membership</h2>
+							<div>
+								<p class="shedule-body-text mb-0">Register Today</p>
+								<p class="shedule-big-footer">20% Discount</p>
+							</div>
 						</div>
 					</div>
 				</div>
+				
+				<div class="col mb-3 mb-lg-0">
+					<div class="shedule-card h-100">
+						<div class="shedule-tab">
+							<button class="tablinksReviews" onclick="openCardTab(event, 'tab_4')"></button>
+							<button class="tablinksReviews" onclick="openCardTab(event, 'tab_5')"></button>
+							<button id="defaultOpenCard" class="tablinksReviews" onclick="openCardTab(event, 'tab_6')"></button>
+						</div>
+						<div id="tab_4" class="shedule-box tabcontentReviews h-100">
+							<div class="d-flex flex-column justify-content-between h-100">
+								<h2 class="shedule-title-text">Happy Clients</h2>
+								<p class="shedule-inner-text">I couldn’t be more happy with the results!</p>
+								<p class="shedule-footer-text">Adam Jordan</p>
+							</div>
+						</div>
+						<div id="tab_5" class="shedule-box tabcontentReviews h-100">
+							<div class="d-flex flex-column justify-content-between h-100">
+								<h2 class="shedule-title-text">Happy Clients</h2>
+								<p class="shedule-inner-text">I became stronger thanks to you!</p>
+								<p class="shedule-footer-text">John Doue</p>
+							</div>
+						</div>
+						<div id="tab_6" class="shedule-box tabcontentReviews h-100">
+							<div class="d-flex flex-column justify-content-between h-100">
+								<h2 class="shedule-title-text">Happy Clients</h2>
+								<p class="shedule-inner-text">My body is perfect now!</p>
+								<p class="shedule-footer-text">Elena Helena</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</section>
 
 		<section id="services" class="services container my-container">
 			<h2 class="services-title text-center ml-lg-4 m-0">Services</h2>
 			<p class="services-text text-center ml-lg-4 ml-0">Achieve the best results with our wide variety of trainings!</p>
-			<div class="row row-cols-1 row-cols-lg-3 justify-content-between mx-2 mx-sm-0 mr-lg-n4">
-				<div
-					class="services-card mb-lg-2 mb-5 d-flex flex-column justify-content-center align-items-center text-center px-4 pt-4">
-					<p class="services-border-img text-center"><img src="./images/heart_card.jpg" alt="heart card"></p>
-					<p class="services-card-img text-center mb-0"><img src="./images/heart_card.jpg" alt="heart card"></p>
-					<h3 class="mt-4">Cardio Training</h3>
-					<p class="services-card-text">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel
-						suspendisse scelerisque a aenean hac montes.</p>
+			<div class="row row-cols-1 row-cols-md-3 mr-27px">
+				<div class="col">
+					<div class="services-card mb-lg-2 mb-md-5 mb-4 d-flex flex-column justify-content-center align-items-center text-center px-lg-4 px-2 pt-4">
+						<p class="services-border-img text-center"><img src="./images/heart_card.jpg" alt="heart card"></p>
+						<p class="services-card-img text-center mb-0"><img src="./images/heart_card.jpg" alt="heart card"></p>
+						<h3 class="mt-4">Cardio Training</h3>
+						<p class="services-card-text">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel	suspendisse scelerisque a aenean hac montes.</p>
+					</div>
 				</div>
-
-				<div
-					class="services-card mb-lg-2 mb-5 d-flex flex-column justify-content-center align-items-center text-center px-4 pt-4">
-					<p class="services-border-img text-center"><img src="./images/guru_card.jpg" alt="guru card"></p>
-					<p class="services-card-img text-center mb-0"><img src="./images/guru_card.jpg" alt="guru card"></p>
-					<h3 class="mt-4">Yoga Pilates</h3>
-					<p class="services-card-text">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel
-						suspendisse scelerisque a aenean hac montes.</p>
+				
+				<div class="col">
+					<div class="services-card mb-lg-2 mb-md-5 mb-4 d-flex flex-column justify-content-center align-items-center text-center px-lg-4 px-2 pt-4">
+						<p class="services-border-img text-center"><img src="./images/guru_card.jpg" alt="guru card"></p>
+						<p class="services-card-img text-center mb-0"><img src="./images/guru_card.jpg" alt="guru card"></p>
+						<h3 class="mt-4">Yoga Pilates</h3>
+						<p class="services-card-text">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+					</div>
 				</div>
-
-				<div
-					class="services-card mb-lg-2 mb-0 d-flex flex-column justify-content-center align-items-center text-center px-4 pt-4">
-					<p class="services-border-img text-center"><img src="./images/weightlift_card.jpg" alt="gym card"></p>
-					<p class="services-card-img text-center mb-0"><img src="./images/weightlift_card.jpg" alt="gym card"></p>
-					<h3 class="mt-4">Power Training</h3>
-					<p class="services-card-text">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel
-						suspendisse scelerisque a aenean hac montes.</p>
+				
+				<div class="col">
+					<div class="services-card mb-lg-2 mb-0 d-flex flex-column justify-content-center align-items-center text-center px-lg-4 px-2 pt-4">
+						<p class="services-border-img text-center"><img src="./images/weightlift_card.jpg" alt="gym card"></p>
+						<p class="services-card-img text-center mb-0"><img src="./images/weightlift_card.jpg" alt="gym card"></p>
+						<h3 class="mt-4">Power Training</h3>
+						<p class="services-card-text">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel
+							suspendisse scelerisque a aenean hac montes.</p>
+					</div>
 				</div>
 			</div>
 
@@ -182,52 +190,58 @@
 				<h2 class="services-title text-center mb-0 ml-lg-4">Team</h2>
 				<p class="services-text team-text text-center ml-lg-4 ml-0">We’re dream team!</p>
 			</div>
-			<div class="services-body row row-cols-1 row-cols-lg-3 justify-content-between ml-lg-0 mx-2 mx-sm-0 mr-lg-n4">
-				<div class="card team-card mb-lg-2 mb-4 shadow-sm border-0 rounded-0">
-					<div class="team-box">
-						<div class="team-hover text-center">
-							<p class="mb-0">$69.00</p>
-							<p class="mb-0">1 - 5 sessions / month</p>
+			<div class="services-body row row-cols-1 row-cols-md-3 mleft-0 mr-27px">
+				<div class="col">
+					<div class="card team-card mb-lg-2 mb-4 shadow-sm border-0 rounded-0">
+						<div class="team-box">
+							<div class="team-hover text-center">
+								<p class="mb-0">$69.00</p>
+								<p class="mb-0">1 - 5 sessions / month</p>
+							</div>
+							<img src="./images/teamcard_1.jpg" class="card-img-top" alt="team card">
 						</div>
-						<img src="./images/teamcard_1.jpg" class="card-img-top" alt="team card">
-					</div>
-					<div class="card-body text-center d-flex flex-column">
-						<p class="team-avatar mx-auto"><img src="./images/teamavatar_1.png" alt="avatar"></p>
-						<h5 class="card-title team-card-title mb-0">Eva Adamson</h5>
-						<p class="team-card-text card-text flex-grow-1">Fitness Instructor</p>
-						<div><a class="d-inline-block fitness-button" href="#">Sign Up Now</a></div>
+						<div class="card-body text-center d-flex flex-column">
+							<p class="team-avatar mx-auto"><img src="./images/teamavatar_1.png" alt="avatar"></p>
+							<h5 class="card-title team-card-title mb-0">Eva Adamson</h5>
+							<p class="team-card-text card-text flex-grow-1">Fitness Instructor</p>
+							<div><a class="d-inline-block fitness-button team-btn" href="#">Sign Up Now</a></div>
+						</div>
 					</div>
 				</div>
-
-				<div class="card team-card mb-lg-2 mb-4 shadow-sm border-0 rounded-0">
-					<div class="team-box">
-						<div class="team-hover text-center">
-							<p class="mb-0">$50.00</p>
-							<p class="mb-0">1 - 4 sessions / month</p>
+				
+				<div class="col">
+					<div class="card team-card mb-lg-2 mb-4 shadow-sm border-0 rounded-0">
+						<div class="team-box">
+							<div class="team-hover text-center">
+								<p class="mb-0">$50.00</p>
+								<p class="mb-0">1 - 4 sessions / month</p>
+							</div>
+							<img src="./images/teamcard_2.jpg" class="card-img-top" alt="team card">
 						</div>
-						<img src="./images/teamcard_2.jpg" class="card-img-top" alt="team card">
-					</div>
-					<div class="card-body text-center d-flex flex-column">
-						<p class="team-avatar mx-auto"><img src="./images/teamavatar_2.png" alt="avatar"></p>
-						<h5 class="card-title team-card-title mb-0">Nick Williams</h5>
-						<p class="team-card-text card-text flex-grow-1">Personal Trainer</p>
-						<div><a class="d-inline-block fitness-button" href="#">Sign Up Now</a></div>
+						<div class="card-body text-center d-flex flex-column">
+							<p class="team-avatar mx-auto"><img src="./images/teamavatar_2.png" alt="avatar"></p>
+							<h5 class="card-title team-card-title mb-0">Nick Williams</h5>
+							<p class="team-card-text card-text flex-grow-1">Personal Trainer</p>
+							<div><a class="d-inline-block fitness-button team-btn" href="#">Sign Up Now</a></div>
+						</div>
 					</div>
 				</div>
-
-				<div class="card team-card mb-lg-2 mb-4 shadow-sm border-0 rounded-0">
-					<div class="team-box">
-						<div class="team-hover text-center">
-							<p class="mb-0">$80.00</p>
-							<p class="mb-0">1 - 6 sessions / month</p>
+				
+				<div class="col">
+					<div class="card team-card mb-lg-2 mb-4 shadow-sm border-0 rounded-0">
+						<div class="team-box">
+							<div class="team-hover text-center">
+								<p class="mb-0">$80.00</p>
+								<p class="mb-0">1 - 6 sessions / month</p>
+							</div>
+							<img src="./images/teamcard_3.jpg" class="card-img-top" alt="team card">
 						</div>
-						<img src="./images/teamcard_3.jpg" class="card-img-top" alt="team card">
-					</div>
-					<div class="card-body text-center d-flex flex-column">
-						<p class="team-avatar mx-auto"><img src="./images/teamavatar_3.png" alt="avatar"></p>
-						<h5 class="card-title team-card-title mb-0">John Philips</h5>
-						<p class="team-card-text card-text flex-grow-1">Personal Trainer</p>
-						<div><a class="d-inline-block fitness-button" href="#">Sign Up Now</a></div>
+						<div class="card-body text-center d-flex flex-column">
+							<p class="team-avatar mx-auto"><img src="./images/teamavatar_3.png" alt="avatar"></p>
+							<h5 class="card-title team-card-title mb-0">John Philips</h5>
+							<p class="team-card-text card-text flex-grow-1">Personal Trainer</p>
+							<div><a class="d-inline-block fitness-button team-btn" href="#">Sign Up Now</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -241,7 +255,7 @@
 					</p>
 				</div>
 
-				<div class="row mr-lg-n5">
+				<div class="row mr-27px">
 					<div class="col-12 col-lg-8 mb-3 mb-lg-0 offset-lg-4 pricing-box">
 						<div class="pricing-card d-flex flex-wrap">
 							<div class="col-12 col-md-6 mb-5 mb-md-0 text-center text-md-left">
@@ -249,7 +263,7 @@
 								<p class="pricing-card-price">$850.00 <span>/ year</span></p>
 								<a class="d-inline-block fitness-button pricing-btn" href="#">Sign Up Now</a>
 							</div>
-							<ul class="pricing-list col-12 col-md-6">
+							<ul class="pricing-list col-12 col-md-6 d-none d-md-block">
 								<li>One Personal Trainer</li>
 								<li>Big gym space for training</li>
 								<li>Free tools & props</li>
@@ -259,7 +273,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-lg-4 offset-lg-8 pricing-box">
-						<div class="pricing-card text-center ml-0 pr-2">
+						<div class="pricing-card text-center ml-lg-2 pr-2">
 							<h4 class="pricing-card-title m-0 pb-1">Cardio Training</h4>
 							<p class="pricing-card-price">$1000.00 <span>/ year</span></p>
 							<a class="d-inline-block fitness-button pricing-btn" href="#">Sign Up Now</a>
@@ -345,7 +359,7 @@
 	<footer class="footer">
 		<div class="container my-container position-relative">
 			<div class="row footer-body">
-				<div class="col-md-5 text-center text-md-left mb-5 mb-md-0">
+				<div class="col-md-5 text-center text-md-left mb-4 mb-md-5 mb-md-0">
 					<h4 class="footer-body-title mb-0">Reserve a Free Trial Class!</h4>
 					<p class="footer-body-text">Shape your body and improve your health.</p>
 					<div class="mt-1 mt-md-4">
@@ -370,17 +384,10 @@
 				<div class="col-md-6 text-center text-md-left footer-social-left order-2 order-md-1">
 					© 2015 All Rights Reserved. Powered by <a href="#">PHIr</a> exclusively for <a href="#">Codrops</a>
 				</div>
-				<div
-					class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center footer-social-right order-1 order-md-2 mb-3 mb-md-0">
-					<a class="mr-4 d-inline-block align-middle" href="#">
-						<img src="./images/facebook.svg" alt="facebook">
-					</a>
-					<a class="mr-4 d-inline-block align-middle" href="#">
-						<img src="./images/twitter.svg" alt="twitter">
-					</a>
-					<a class="d-inline-block align-middle" href="#">
-						<img src="./images/linkedin.svg" alt="linkedin">
-					</a>
+				<div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center footer-social-right order-1 order-md-2 mb-3 mb-md-0 pright-0">
+					<a class="d-inline-block align-middle" href="#"></a>
+					<a class="d-inline-block align-middle" href="#"></a>
+					<a class="mr-0 d-inline-block align-middle" href="#"></a>
 				</div>
 			</div>
 		</div>

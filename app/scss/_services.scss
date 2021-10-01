@@ -1,16 +1,20 @@
 .services {
     margin-top: -80px;
     padding-bottom: 180px;
-	 @media screen and (max-width: 767px) {
+	@media screen and (max-width: 1440px) {
 		margin-top: 70px;
 		padding-bottom: 75px;
-  }
+    }
+    @media screen and (max-width: 767px) {
+		margin-top: 30px;
+        padding-bottom: 40px;
+    }
     &-title, h3 {
         font-family: 'proxima_novabold_700';
         font-size: 48px;
         color: $title-color;
         line-height: 48px;
-		  @media screen and (max-width: 767px) {
+		  @media screen and (max-width: 991px) {
 			  font-size: 35px;
 			  line-height: 30px;
 		  }
@@ -21,22 +25,27 @@
         line-height: 47px;
         color: #bbb;
         margin-bottom: 163px;
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 1440px) {
             margin-bottom: 40px;
         }
-		  @media screen and (max-width: 767px) {
+		@media screen and (max-width: 991px) {
+            font-size: 18px;
 			line-height: 30px;
-			margin-bottom: 55px
+			margin-bottom: 55px;
+		}
+        @media screen and (max-width: 767px) {
+			margin-bottom: 40px;
 		}
     }
 
     &-card {
         position: relative;
-        max-width: none;
-        // padding: 30px;
         min-height: 319px;
         border: 1px solid #ddd;
         transition: .3s;
+        @media screen and (max-width: 767px) {
+            min-height: 170px;
+		}
         h3 {
             font-size: 24px;
             color: $title-color;
@@ -46,12 +55,11 @@
         }
         &:hover .services-border-img, &:hover .services-card-text {
             display: block;
+            opacity: 1;
         }
         &:hover .services-card-img {
             display: none;
-        }
-        @media screen and (min-width: 992px) {
-            max-width: 370px;
+            opacity: 0;
         }
         @media screen and (max-width: 991px) {
             border: 1px solid $primary-color;

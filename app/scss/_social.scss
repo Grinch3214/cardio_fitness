@@ -2,7 +2,7 @@
     .swiper-pagination {
         bottom: 152px;
         left: 15px;
-		  @media screen and (max-width: 991px) {
+		  @media screen and (max-width: 1440px) {
 			  bottom: 35px;
               left: 0;
 		  }
@@ -26,7 +26,7 @@
         padding-top: 148px;
         padding-bottom: 120px;
         background: $primary-color;
-		  @media screen and (max-width: 991px) {
+		  @media screen and (max-width: 1440px) {
 			  padding-top: 40px;
 			  padding-bottom: 20px;
 		  }
